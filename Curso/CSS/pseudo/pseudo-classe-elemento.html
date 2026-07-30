@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pseudo classe/elementos</title>
+  <style>
+    a, a:link {
+      text-decoration: none;
+      color: green;
+      padding: 0.5em 1em;
+    }
+
+    /*
+    a:visited {
+      color: red;
+    }
+    */
+
+    
+
+    a:hover {
+      background: green;
+      color: white;
+    }
+
+   
+    a:active {
+      background-color: purple;
+    }
+    
+    input:checked {
+      margin-left: 10px;
+    }
+
+    input:required {
+      border: 2px solid red;
+    }
+
+    p::first-line {
+      color: red;
+    }
+    
+    p::first-letter {
+      font-size: 2em;
+      color: blue;
+    }
+
+    p::selection {
+      background: yellow;
+    }
+
+   
+  </style>
+</head>
+<body>
+  <div>
+    conteúdo da DIV
+  </div>
+
+  <h2>Coneúdo do h2</h2>
+  
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus doloribus quae nam ducimus voluptatibus? Porro magni sunt dolore, amet, exercitationem reprehenderit hic quibusdam repellat, tenetur dolor cupiditate fuga delectus voluptates.</p>
+
+  <a href="https://www.google.com">Google</a> |
+  <a href="https://www.facebook.com">Facebook</a> |
+  <a href="https://www.instagram.com">Instagram</a>
+
+  <h2>Formulário</h2>
+  <input type="checkbox">Aceito <br> <br>
+  <input type="radio" name="opcao">Sim <br>
+  <input type="radio" name="opcao">Não <br> <br>
+  <input type="text" required placeholder="Digite seu nome">
+
+</body>
+</html>

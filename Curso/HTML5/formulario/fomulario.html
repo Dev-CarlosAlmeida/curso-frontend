@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        background: lavender;
+      }
+
+      .um {
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        height: 500px;
+        background: silver;
+        margin: auto;
+        border: 2px solid;
+        padding: 10px;
+        margin: 20px;
+      }
+      .dois {
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        height: 500px;
+        background: ghostwhite;
+        margin: auto;
+        border: 2px solid;
+        padding: 10px;
+        margin: 20px;
+      }
+
+      .tres {
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        height: 500px;
+        background: floralwhite;
+        margin: auto;
+        border: 2px solid;
+        padding: 10px;
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="um">
+      <h1>Formulário</h1>
+      <br />
+
+      <form>
+        Email: <br />
+        <input type="text" name="email" placeholder="Digite seu email" /> <br />
+        Senha: <br />
+        <input type="password" name="senha" placeholder="Digite sua senha" />
+        <br /><br />
+        <textarea
+          name="comentario"
+          placeholder="Digite um comentáio"></textarea>
+        <br /><br />
+        <button type="submit">
+          <img src="/Curso/HTML5/tabela/img/b6.jpg" width="10" /> Entrar
+        </button>
+      </form>
+    </div>
+
+    <div class="dois">
+      <h1>Mais sobre Formulários</h1>
+      <br />
+      <form action="processa.html" method="get">
+        <h2>Label</h2>
+        <br />
+        <label>
+          Nome:
+          <input type="text" name="nome" />
+        </label>
+        <br />
+
+        <label for="email">Email:</label>
+        <input type="text" name="email" id="email" />
+        <br />
+        <br />
+        <h2>Mais elementos de formulários</h2>
+        <br />
+        Gênero: <br />
+        <label for="feminino">Feminino</label>
+        <input type="radio" name="genero" value="feminino" id="feminino" /> |
+
+        <label for="masculino">Masculino</label>
+        <input type="radio" name="genero" value="masculino" id="masculino" />
+
+        <br /><br />
+        Estilo musical: <br />
+        <label for="rock">Rock</label>
+        <input type="checkbox" name="estilo" value="rock" id="rock" /> |
+
+        <label for="sertanejo">Sertanejo</label>
+        <input type="checkbox" name="estilo" value="sertanejo" id="sertanejo" />
+        |
+
+        <label for="funck">Funck</label>
+        <input type="checkbox" name="estilo" value="funck" id="funck" /> |
+
+        <label for="clasica ">Clasica </label>
+        <input type="checkbox" name="estilo" value="clasica" id="clasica " /> |
+
+        <label for="pop">Pop</label>
+        <input type="checkbox" name="estilo" value="pop" id="pop" /> |
+
+        <label for="gospel">Gospel</label>
+        <input type="checkbox" name="estilo" value="gospel" id="gospel" /> |
+
+        <label for="nenhuma">Nenhuma das opções</label>
+        <input type="checkbox" name="estilo" value="nenhuma" id="nenhuma" />
+        <br /><br />
+        Estado: <br />
+        <select name="estado">
+          <option value="">Seleione...</option>
+          <option value="sp">São Paulo</option>
+          <option value="rj">Rio de Janeio</option>
+          <option value="mg">Minas Gerais</option>
+          <option value="ce">Ceará</option>
+          <option value="sc">Santa Catarina</option>
+        </select>
+        <br /><br />
+        Upload de arquivo: <br />
+        <input type="file" name="arquivo" />
+
+        <br /><br />
+
+        <button>Cadastrar</button>
+      </form>
+    </div>
+    <div class="tres">
+      <h1>Fieldset & Legend</h1>
+      <br />
+
+      <fieldset>
+        <legend>Dados pessoais</legend>
+        <br />
+        <label>
+          <label for="nome2">Nome:</label>
+          <input type="text" name="nome" id="nome2" />
+        </label>
+        <br />
+
+        <label for="email2">Email:</label>
+        <input type="text" name="email" id="email2" />
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>Dados adicionais</legend>
+        <br />
+        Gênero: <br />
+
+        <label for="feminino2">Feminino</label>
+        <input type="radio" name="genero" value="feminino" id="feminino2" /> |
+
+        <label for="masculino2">Masculino</label>
+        <input type="radio" name="genero" value="masculino" id="masculino2" />
+      </fieldset>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mais sobre seletores (prática)</title>
+
+  <style>
+    /* Seletor universal 
+    *{
+      border: 1px solid red;
+    }
+    */
+    
+    /* Seletor Texto 
+    h1, p, h2 {
+      border: 1px solid red;
+    }
+    */
+
+    /* Seletor de classe 
+    h1.destaque {
+      background: purple;
+    }
+    p.destaque {
+      background: red;
+    }    
+
+    .titulo {
+      color: white;
+    }
+    */
+
+    /* Seletor de ID 
+    #promocao {
+      background: purple;
+    }
+    */
+
+    /* Seletor de filho 
+    div>h1 {
+      background-color: orange;
+    }
+    li>a {
+      color: brown;
+      text-decoration: none;
+    }
+    */
+
+    /* Seletor de descendentes 
+    div h1 {
+      background-color: orange;
+    }
+    li a {
+      color: brown;
+      text-decoration: none;
+    }
+    */
+
+    /* Seletor de irmão adjacente 
+    h1+p {
+      color: brown;
+      border: 1px solid red;
+    }
+    */
+
+    /* Seletor de irmão geral 
+    p~a {
+      color: brown;
+      border: 1px solid red;
+    }
+    */
+
+
+h1 {
+ color: green;
+}
+
+h1+p {
+border-top: 3px solid grey;
+padding-top: 10px;
+}
+
+h1~a {
+  background: purple;
+  color: white;
+}
+
+p.destaque {
+  color: purple;
+}
+
+</style>
+</head>
+<body>
+
+<h1>Título de páginas</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+<a href="">Leia mais</a> -
+<a href="">Gostei(10)</a>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+<h2>Subtítulo da página</h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+<p class="destaque">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+<!--
+  <p>Teste</p>
+
+  <a href="">link de teste</a>
+
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+  <h1>Seletor de irmão (adjacente e geral)</h1>
+
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+  <div style="border: 1px solid black;"> 
+
+    <h1 class="titulo destaque">Título da página</h1>
+
+    <span style="background-color: gray;">
+
+        
+      <h1 class="titulo destaque">Título da página</h1>
+    </span>
+
+  </div>
+  <ul>
+    <li>
+      <a href="">Home</a>
+      <span>
+        <a href="">Outro link</a> 
+      </span>
+    </li>
+    <li>
+      <a href="">Sobre</a>
+    </li>
+  </ul>
+
+  <h2>Subtítulo da página</h2>
+
+  <p class="destaque">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+  </p>
+
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+
+  <h2>Subtítulo da página</h2>
+
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit</p>
+  
+  <div id="promocao">
+
+    <h2>Promoção</h2>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+  </div>
+  -->
+</body>
+</html>

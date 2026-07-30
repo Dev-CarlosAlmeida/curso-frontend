@@ -1,0 +1,18 @@
+a {
+  color:olivedrab;
+}
+p {
+  color:#FF00FF;
+}
+li {
+  background: lightskyblue;
+  border: 1px solid blue;
+}
+
+td {
+  border: 3px solid black;
+}
+table {
+    background: orange;
+    border: 5px solid red;
+}
