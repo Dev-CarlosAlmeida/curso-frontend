@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobreposição de elementos</title>
+
+  <style>
+    body {
+      background-color: mediumturquoise;
+      margin: 0;
+      padding: 0;
+    }
+
+    .box1 {
+      background-color: blue;
+      color: white;
+      border: 5px solid orange;
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      top: 180px;
+      left: 140px;
+      z-index: 3;
+    }
+
+    .box2 {
+      background-color: yellow;
+      border: 5px solid green;
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      top: 280px;
+      left: 240px;
+      z-index: 2;
+    }
+
+    .box3 {
+      background-color: red;
+      color: white;
+      border: 5px solid slateblue;
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      top: 180px;
+      left:340px ;
+      z-index: 1;
+    }
+
+
+    .box4 {
+      background-color: white;
+      border: 5px solid green;
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      top: 80px;
+      left: 240px;
+      z-index: 0;
+    }
+
+     .box5 {
+      background-color: blue;
+      color: white;
+      border: 5px solid orange;
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      bottom: 180px;
+      right: 140px;
+      z-index: 3;
+    }
+
+    .box6 {
+      background-color: yellow;
+      border: 5px solid green;
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      bottom: 280px;
+      right: 240px;
+      z-index: 2;
+    }
+
+    .box7 {
+      background-color: red;
+      color: white;
+      border: 5px solid slateblue;
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      bottom: 180px;
+      right: 340px ;
+      z-index: 1;
+    }
+
+
+    .box8 {
+      background-color: white;
+      border: 5px solid green;
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      bottom: 80px;
+      right: 240px;
+      z-index: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="box1">
+    caixa 1
+  </div>
+
+  <div class="box2">
+    caixa 2
+  </div>
+
+  <div class="box3">
+    caixa 3
+  </div>
+
+  <div class="box4">
+    caixa 4
+  </div>
+  
+  <div class="box5">
+    caixa 7
+  </div>
+
+  <div class="box6">
+    caixa 8
+  </div>
+
+  <div class="box7">
+    caixa 5
+  </div>
+
+  <div class="box8">
+    caixa 6
+  </div>
+</body>
+</html>
