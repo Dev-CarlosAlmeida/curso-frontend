@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navegação vertical</title>
+  <style>
+ ul {
+  background-color: orange;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  }
+
+#boxmenu li a {
+  display: block;
+  color: black;
+  padding: 10px 16px;
+  text-decoration: none;
+}
+
+li a::before {
+      content: "▶";
+      color: white;
+      font-size: 0.5rem;
+      vertical-align: middle;
+      margin-right: 8px;
+    }
+
+#boxmenu li a:hover {
+  background-color: #ff8d20;
+  color: white;
+  padding-left: 28px;
+ }
+  </style>
+</head>
+<body>
+  <h1>Menu de navegação</h1>
+  <div id="boxmenu">
+    <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Podutos</a></li>
+    <li><a href="#">Carrinho</a></li>
+    <li><a href="#">Conato</a></li>
+  </ul>
+    
+
+  </div>
+</body>
+</html>
